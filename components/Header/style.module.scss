@@ -1,0 +1,13 @@
+.Header {
+  .Logo {
+    width: 45px;
+  }
+  .currencyBtc {
+    width: 30px;
+  }
+  .Logo, .currencyBtc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
