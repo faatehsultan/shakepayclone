@@ -5,7 +5,7 @@ export default function Metadata({ title, description, image, url }) {
   return (
     <>
       <Head>
-        <title>{title ? title : "Shakepay Clone"}</title>
+        <title>{title ? title : "Derekpay"}</title>
         <meta
           name="description"
           content={description ? description : "Shakepay Clone App"}

@@ -24,7 +24,7 @@ export default function Home() {
               <div className="col-12 col-md-7 py-5">
                 <div className="display-5 font__avenirnextbold">
                   The <span className="text-blue">easiest way</span> for
-                  Canadians to buy and sell bitcoin.
+                  Indians to buy and sell bitcoin.
                 </div>
                 <br />
                 <div className="text-gray fs-4 fw-bold">
@@ -149,7 +149,7 @@ export default function Home() {
                 <Link href="/">
                   <a className="">
                     <h2 className="font__avenirnextbold">700,000+</h2>
-                    <p>Canadians served</p>
+                    <p>Indians served</p>
                   </a>
                 </Link>
               </div>

@@ -17,7 +17,7 @@ export default function Header() {
                   <Image src={ImgLogo} alt="logo" className="img-fluid" />
                 </div>
                 <div className="ms-2 fs-5 fw-bold font__avenirnextbold">
-                  Shakepay
+                  Derekpay
                 </div>
               </a>
             </Link>

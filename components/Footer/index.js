@@ -14,10 +14,10 @@ export default function Footer() {
                 <Image src={ImgLogo} alt="logo" className="img-fluid" />
               </div>
               <div className="ms-2 fs-5 fw-bold font__avenirnextbold">
-                Shakepay Inc.
+                Derekpay Inc.
               </div>
             </div>
-            <div className="text-gray fw-bold">Montreal, Canada 🍁</div>
+            <div className="text-gray fw-bold">India 🍁</div>
             <br />
             <br />
             <div className="text-gray font__avenirnextbold">Regulated</div>
