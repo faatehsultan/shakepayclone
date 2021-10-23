@@ -56,7 +56,7 @@ export default function Header() {
             <Link href="/">
               <a className="fw-bold">Sign in</a>
             </Link>
-            <Link href="/">
+            <Link href="/signup">
               <a className="fw-bold btn btn-primary">Get Started</a>
             </Link>
           </div>

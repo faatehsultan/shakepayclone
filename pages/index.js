@@ -34,7 +34,7 @@ export default function Home() {
                 <br />
                 <div className="d-flex justify-content-start">
                   <div className="p-2">
-                    <Link href="/">
+                    <Link href="/signup">
                       <a className="btn btn-primary p-2 font__avenirnextbold position-relative d-flex justify-content-center align-items-center">
                         <Image
                           src={ImgGetongoogleplay}
