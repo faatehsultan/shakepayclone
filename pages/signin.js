@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ImgLogo from "../public/ShakepayLogo.svg";
 import { authContext } from "../contexts/AuthContext";
+import { useRouter } from "next/router";
 
 export default function Signin() {
   const [email, setEmail] = useState("");
@@ -12,6 +13,7 @@ export default function Signin() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const { user, setUser } = useContext(authContext);
+  const router = useRouter();
 
   const handleSignin = (e) => {
     setLoading(true);
@@ -25,6 +27,8 @@ export default function Signin() {
       username: "johndoe",
       email: email,
     });
+
+    router.push("/");
   };
 
   return (
@@ -38,14 +42,16 @@ export default function Signin() {
       >
         <div className={styles.formContainer + " border rounded p-4 w-100"}>
           {/* form top logo */}
-          <div
-            className="position-absolute top-0 start-0 w-100 d-flex justify-content-center align-items-center"
-            style={{ marginTop: "-50px" }}
-          >
-            <div className={styles.formTopLogo}>
-              <Image src={ImgLogo} alt="logo" className="img-fluid" />
-            </div>
-          </div>
+          <Link href="/">
+            <a
+              className="position-absolute top-0 start-0 w-100 d-flex justify-content-center align-items-center"
+              style={{ marginTop: "-50px" }}
+            >
+              <div className={styles.formTopLogo}>
+                <Image src={ImgLogo} alt="logo" className="img-fluid" />
+              </div>
+            </a>
+          </Link>
 
           <div
             className="fs-6 fw-bold text-center"

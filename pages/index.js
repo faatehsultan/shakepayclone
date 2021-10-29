@@ -12,19 +12,19 @@ import ImgBloomberg from "../public/bloomberg.svg";
 import ImgForbes from "../public/forbes.svg";
 import ImgFinancialpost from "../public/financial-post.svg";
 
-export default function Home() {
+export default function Home(props) {
   return (
     <>
       <Metadata />
-      <MainLayout>
+      <MainLayout {...props}>
         <div className={styles.Home}>
           {/* hero */}
           <div className="container mt-5 pt-5">
             <div className="row">
               <div className="col-12 col-md-7 py-5">
                 <div className="display-5 font__avenirnextbold">
-                  The <span className="text-blue">easiest way</span> for
-                  Indians to buy and sell bitcoin.
+                  The <span className="text-blue">easiest way</span> for Indians
+                  to buy and sell bitcoin.
                 </div>
                 <br />
                 <div className="text-gray fs-4 fw-bold">

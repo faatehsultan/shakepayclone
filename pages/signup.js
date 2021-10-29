@@ -26,14 +26,16 @@ export default function Signup() {
       >
         <div className={styles.formContainer + " border rounded p-4 w-100"}>
           {/* form top logo */}
-          <div
-            className="position-absolute top-0 start-0 w-100 d-flex justify-content-center align-items-center"
-            style={{ marginTop: "-50px" }}
-          >
-            <div className={styles.formTopLogo}>
-              <Image src={ImgLogo} alt="logo" className="img-fluid" />
-            </div>
-          </div>
+          <Link href="/">
+            <a
+              className="position-absolute top-0 start-0 w-100 d-flex justify-content-center align-items-center"
+              style={{ marginTop: "-50px" }}
+            >
+              <div className={styles.formTopLogo}>
+                <Image src={ImgLogo} alt="logo" className="img-fluid" />
+              </div>
+            </a>
+          </Link>
 
           <div className="fs-5 text-center" style={{ marginTop: "50px" }}>
             Let&apos;s get started 🚀
